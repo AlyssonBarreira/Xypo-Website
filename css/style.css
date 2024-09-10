@@ -1,3 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.home-btn {
+  padding: 18px 40px;
+  background: transparent;
+  outline: none;
+  border: 3px solid #f67c92;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.line {
+  margin-top: 40px;
+}
+
+.logo {
+  margin-top: 30px;
+  width: 100px;
+}
+
+/*----------- HOME ------------*/
 .home {
   height: 100vh;
   background-image: url(../../images/background.png);
@@ -8,15 +32,8 @@
   max-width: 350px;
   margin-top: 100px;
 }
-.home .home-btn {
-  padding: 18px 40px;
-  background: transparent;
-  outline: none;
-  border: 2px solid #f67c92;
-  font-weight: bold;
-  cursor: pointer;
-}
 
+/*----------- ABOUT US ------------*/
 .about {
   padding: 100px 0;
   display: flex;
@@ -35,6 +52,164 @@
 .about .about-text {
   text-align: right;
   margin-right: 100px;
+}
+
+/*----------- FEATURES ------------*/
+.features {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.features .features-row {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.features .features-row .feature-col {
+  max-width: 300px;
+  text-align: center;
+}
+.features .features-row .feature-col img {
+  width: 100px;
+}
+.features .feature-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/*----------- COURSES ------------*/
+.courses {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.courses .courses-row {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+.courses .courses-row .courses-col-left {
+  flex-basis: 50%;
+}
+.courses .courses-row .course-text {
+  max-width: 350px;
+}
+.courses .courses-row .courses-col-right {
+  flex-basis: 50%;
+}
+.courses .courses-row .courses-col-right img {
+  width: 100%;
+}
+
+/*----------- OFFER ------------*/
+.offer {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.offer .left-col {
+  flex-basis: 50%;
+}
+.offer .left-col img {
+  width: 100%;
+}
+.offer .right-col {
+  flex-basis: 50%;
+}
+.offer .offer-text {
+  text-align: right;
+  margin-right: 100px;
+}
+
+/*----------- CONTACT ------------*/
+#contact {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#contact .contact-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#contact .contact-left-col,
+#contact .contact-right-col {
+  flex-basis: 50%;
+}
+#contact .contact-right-col img {
+  width: 100%;
+}
+#contact form {
+  max-width: 370px;
+  margin: 30px 0px;
+}
+#contact form input {
+  width: 100%;
+  padding: 12px 10px;
+  margin-bottom: 5px;
+  outline: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  border: 2px solid #fab3c4;
+}
+#contact .form-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#contact .form-btn button {
+  flex-basis: 48%;
+  padding: 18px 0;
+}
+
+/*----------- FOOTER ------------*/
+.footer {
+  padding: 50px 0 30px;
+}
+.footer .footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer .footer-row hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #f67c92;
+}
+.footer .footer-row .footer-col-left {
+  flex-basis: 50%;
+  margin-top: 60px;
+}
+.footer .footer-row .footer-col-right {
+  flex-basis: 35%;
+}
+.footer .footer-row .footer-link {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer .footer-row .link-title h4 {
+  color: #fab3c4;
+  margin-bottom: 20px;
+}
+.footer .footer-row .link-title small {
+  font-size: 13px;
+  color: #777;
+}
+.footer .footer-row .footer-info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.footer .footer-row .footer-logo button {
+  padding: 12px 38px;
+  margin-top: 20px;
+  font-size: 10px;
+}
+.footer .footer-row .copyright-text, .footer .footer-row .footer-logo {
+  flex-basis: 40%;
 }
 
 .square {
